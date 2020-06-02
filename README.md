@@ -6,4 +6,5 @@ Enjoy using Minimalist PDF Creator!
 
 ## To Run
  flutter pub get
+ <br>
  flutter run 
