@@ -4,6 +4,6 @@ Minimalist PDF Creator is just easy to use Image to PDF mobile app. Creating Pdf
 
 Enjoy using Minimalist PDF Creator!
 
-## To install
->> flutter pub get
->> flutter run 
+## To Run
+ flutter pub get
+ flutter run 
