@@ -97,6 +97,7 @@ class _HomeState extends State<Home> {
         enableCamera: true,
       );
 
+      
       String filePath = await buildPdf(data: resultList, quality: 30);
       print(filePath);
       showSnackBarSucceed();
@@ -106,9 +107,18 @@ class _HomeState extends State<Home> {
     }
   }
 
+  showImageEditor() {
+    scaffoldKey.currentState.showBottomSheet((context) {
+      
+      return Container(
+        height: 200,
+      );
+    });
+  }
+
   showSnackBarSucceed() {
     scaffoldKey.currentState.showSnackBar(SnackBar(
-      content: Text("Created & Saved"),
+      content: Text("Created & Save to Files or Share!"),
       duration: Duration(seconds: 1, milliseconds: 300),
     ));
   }
